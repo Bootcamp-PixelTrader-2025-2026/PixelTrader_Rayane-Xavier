@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PixelTrader - Catalogue</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h3>PixelTrader</h3>
+      </div>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="stats.html">Statistiques</a>
+        <a href="connexion.html">
+          <button class="secondary-button">Connexion</button>
+        </a>
+      </nav>
+    </header>
+
+    <section>
+      <div class="header-game header-game-catalogue">
+        <div class="align">
+          <img src="images/register-pixel.png" alt="" />
+          <p class="name-game">Jeux 100% Originaux</p>
+        </div>
+        <div class="align">
+          <img src="images/Loupe-pixel. png" alt="" />
+          <p class="name-game">Testés et Approuvés</p>
+        </div>
+        <div class="align">
+          <img src="images/Box-pixel.png" alt="" />
+          <p class="name-game">Expédiés en 24h</p>
+        </div>
+      </div>
+
+      <div class="products-by-console catalogue-page">
+        <div class="filtre-console">
+          <button class="console" data-name="Nintendo Entertainment System">
+            <img src="images/Nes-pixel.png" alt="NES" />
+          </button>
+          <button class="console" data-name="Super Nintendo">
+            <img src="images/SNES.png" alt="SNES" />
+          </button>
+          <button class="console" data-name="Game Boy">
+            <img src="images/Gameboy.png" alt="Game Boy" style="width: 40px" />
+          </button>
+          <button class="console" data-name="Nintendo 64">
+            <img src="images/Nintendo64-pixel.png" alt="N64" />
+          </button>
+          <button class="console" data-name="Sega Mega Drive">
+            <img src="images/MegaDrive_pixel.png" alt="Mega Drive" />
+          </button>
+          <button class="console" data-name="PlayStation 1">
+            <img src="images/PS1-pixel.png" alt="PS1" />
+          </button>
+        </div>
+
+        <div class="filtre">
+          <div class="selection">
+            <div class="select-wrapper">
+              <select name="price">
+                <option value="">PRIX</option>
+                <option value="0-20">0€ - 20€</option>
+                <option value="21-50">21€ - 50€</option>
+                <option value="51-150">51€ - 150€</option>
+                <option value="151-500">151€ - 500€</option>
+                <option value="501+">+500€</option>
+              </select>
+            </div>
+
+            <div class="select-wrapper">
+              <select name="etat">
+                <option value="">ÉTAT</option>
+                <option value="neuf">Comme neuf</option>
+                <option value="Excellent">Excellent</option>
+                <option value="très bon">Très bon</option>
+                <option value="Bon">Bon</option>
+                <option value="Moyen">Moyen</option>
+                <option value="Usé">Usé</option>
+                <option value="Ab��mé">Abîmé</option>
+                <option value="Incomplet">Incomplet</option>
+              </select>
+            </div>
+
+            <div class="select-wrapper">
+              <select name="annee">
+                <option value="">ANNÉE DE SORTIE</option>
+                <option value="retro">Avant 1990</option>
+                <option value="90s">1990 - 1999</option>
+                <option value="2000s">2000 - 2009</option>
+                <option value="recent">2010+</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="recherche">
+            <input
+              type="text"
+              class="input-pixel"
+              placeholder="Rechercher..."
+            />
+          </div>
+        </div>
+
+        <div class="cards-console" id="console-products-container"></div>
+      </div>
+    </section>
+
+    <div class="bande-bleu">
+      <img src="images/Banniere-bleu.png" alt="" />
+    </div>
+
+    <section class="contact">
+      <form class="form-contact">
+        <h2>Contactez Nous</h2>
+        <input type="text" placeholder="ENTREZ VOTRE NOM" required />
+        <input type="email" placeholder="ENTREZ UNE ADRESSE EMAIL VALIDE" required />
+        <textarea placeholder="Votre message" required></textarea>
+        <button class="primary-button button-shop" type="submit">
+          Envoyer
+        </button>
+      </form>
+    </section>
+  </body>
+</html>

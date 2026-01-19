@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PixelTrader - Statistiques</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="stats.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h3>PixelTrader</h3>
+      </div>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="catalogue. html">Catalogue</a>
+        <a href="stats.html">Statistiques</a>
+        <a href="connexion. html">
+          <button class="secondary-button">Connexion</button>
+        </a>
+      </nav>
+    </header>
+
+    <section style="padding: 50px 130px; color: white; min-height: 70vh;">
+      <h2 style="margin-bottom: 30px;">📊 Statistiques du Stock</h2>
+      
+      <div id="stock-total" style="margin-bottom: 50px;">
+        <p>Chargement...</p>
+      </div>
+      
+      <h2 style="margin:  50px 0 30px 0;">🎮 Par Plateforme</h2>
+      <div id="stats-plateformes"></div>
+      
+      <h2 style="margin: 50px 0 30px 0;">💰 Top 10 Investissements</h2>
+      <div id="top-investissements"></div>
+
+      <h2 style="margin: 50px 0 30px 0;">📍 Par Emplacement</h2>
+      <div id="stats-emplacements"></div>
+    </section>
+
+    <div class="bande-bleu">
+      <img src="images/Banniere-bleu.png" alt="" />
+    </div>
+
+    <section class="contact">
+      <form class="form-contact">
+        <h2>Contactez Nous</h2>
+        <input type="text" placeholder="ENTREZ VOTRE NOM" required />
+        <input type="email" placeholder="ENTREZ UNE ADRESSE EMAIL VALIDE" required />
+        <textarea placeholder="Votre message" required></textarea>
+        <button class="primary-button button-shop" type="submit">
+          Envoyer
+        </button>
+      </form>
+    </section>
+  </body>
+</html>

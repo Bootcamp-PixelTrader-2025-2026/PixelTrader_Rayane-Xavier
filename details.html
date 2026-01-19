@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PixelTrader - Détails du Jeu</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="detail.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h3>PixelTrader</h3>
+      </div>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="stats.html">Statistiques</a>
+        <a href="connexion.html">
+          <button class="secondary-button">Connexion</button>
+        </a>
+      </nav>
+    </header>
+
+    <section id="detail-container" style="padding: 50px 130px; color: white; min-height: 60vh;">
+      <p style="text-align: center;">Chargement...</p>
+    </section>
+
+    <div class="bande-bleu">
+      <img src="images/Banniere-bleu.png" alt="" />
+    </div>
+
+    <section class="contact">
+      <form class="form-contact">
+        <h2>Contactez Nous</h2>
+        <input type="text" placeholder="ENTREZ VOTRE NOM" required />
+        <input type="email" placeholder="ENTREZ UNE ADRESSE EMAIL VALIDE" required />
+        <textarea placeholder="Votre message" required></textarea>
+        <button class="primary-button button-shop" type="submit">
+          Envoyer
+        </button>
+      </form>
+    </section>
+  </body>
+</html>
